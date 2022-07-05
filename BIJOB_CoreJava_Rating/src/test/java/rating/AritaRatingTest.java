@@ -1,19 +1,24 @@
-package test.java.rating;
+package rating;
 
 
-import main.java.rating.AritaRating;
 import org.junit.Assert;
 import org.junit.Test;
 public class AritaRatingTest {
 
         private final String INPUT = "123456";
-        private String student="Bhagath";
+        private String student="Ananth";
+    private String subject ="ElectroFields";
     AritaRating aritaObj = new AritaRating();
 
 
     @Test
     public void testLoadStudent() {
-        aritaObj.loadStudent(student);
+       aritaObj.loadStudent(student);
+    }
+
+    @Test
+    public void testLoadSubject() {
+        aritaObj.loadSubject(subject);
     }
 
         @Test
